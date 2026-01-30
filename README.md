@@ -1,3 +1,9 @@
+openssl version
+openssl enc -aes-256-cbc -salt -in message.txt -out message.enc
+openssl enc -aes-256-cbc -d -in message.enc -out decrypted.txt
+openssl genrsa -out private.key 2048
+openssl rsa -in private.key -pubout -out public.key
+openssl dgst -sha256 message.txt these are commands 
 # cyber-task-6-cryptography
 README.md message.txt message.enc decrypted.txt screenshots/
 # Task 6: Introduction to Cryptography
